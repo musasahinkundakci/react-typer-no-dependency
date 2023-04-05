@@ -9,7 +9,7 @@ const LOOP_TYPES = {
 };
 
 const Typer = forwardRef((props, ref) => {
-  const { value, speed, sleep, Wrapper, ...rest } = props;
+  const { value, speed, Wrapper, ...rest } = props;
 
   const [mode, setMode] = useState(() => LOOP_TYPES.START);
   const [innerHTML, setInnerHTML] = useState("");
@@ -31,7 +31,6 @@ const Typer = forwardRef((props, ref) => {
           index === 0 && setMode(LOOP_TYPES.START);
           return;
         }
-
         index = index - 1;
       }, speed);
   }, [mode, innerHTML]);
@@ -49,7 +48,6 @@ const Typer = forwardRef((props, ref) => {
  * @param {Object} props
  * @param {string} props.value The value to be typed with effect
  * @param {number} props.speed The speed of the effect in milliseconds
- * @param {number} props.sleep The sleep time of the effect in milliseconds
  * @param {React.Component} props.Wrapper The wrapper component to be used
  * @param {React.RefObject} ref The ref to be used by the component
  * @example 
