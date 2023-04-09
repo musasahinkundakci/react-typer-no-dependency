@@ -52,9 +52,8 @@ const Typer = forwardRef((props, ref) => {
  * @param {React.RefObject} ref The ref to be used by the component
  * @example 
  *    <Typer
-        value="Click Me asshole"
+        value="Hi I'm Musa. I'm a software engineer. I love to code."
         speed="100"
-        sleep="1900"
         Wrapper={Wrapper}
       />
  */
