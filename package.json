@@ -1,6 +1,6 @@
 {
   "name": "react-typer-no-dependency",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "It shows the text you want with human typing effect.",
   "main": "index.js",
   "scripts": {
