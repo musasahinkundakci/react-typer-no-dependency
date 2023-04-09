@@ -8,6 +8,19 @@ const LOOP_TYPES = {
   REVERSE: "reverse",
 };
 
+/**
+ * @param {Object} props
+ * @param {string} props.value The value to be typed with effect
+ * @param {number} props.speed The speed of the effect in milliseconds
+ * @param {React.Component} props.Wrapper The wrapper component to be used
+ * @param {React.RefObject} ref The ref to be used by the component
+ * @example 
+ *    <Typer
+        value="Hi I'm Musa. I'm a software engineer. I love to code."
+        speed="100"
+        Wrapper={Wrapper}
+      />
+ */
 const Typer = forwardRef((props, ref) => {
   const { value, speed, Wrapper, ...rest } = props;
 
